@@ -21,7 +21,7 @@ let cart = [];
 class fruits{
 async getFruits(){
 try {
-    let result = await fetch('NewGriffinChallenge.json');
+    let result = await fetch("fruits.json");
     let data = await result.json();
    return data; 
 } catch (error) {
@@ -39,11 +39,11 @@ class fruitStore{
 
 document.addEventListener("DOMContentLoaded",()=>{
 
-    // const fruitDisplay = new fruitDisplay();
-     const fruits = new fruits();
+    const fruitDisplays = new fruitDisplay();
+     const fruit = new fruits();
     //getting all fruits stored
     
-    console.log(fruits.getFruits());
+    console.log(fruit.getFruits());
 })
 
 // if (document.readyState == 'loading') {
