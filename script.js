@@ -23,7 +23,7 @@ async getFruits(){
 try {
     let result = await fetch("fruits.json");
     let data = await result.json();
-   return data; 
+   return data;
 } catch (error) {
   console.log(Error) ; 
 }
