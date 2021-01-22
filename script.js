@@ -23,7 +23,15 @@ async getFruits(){
 try {
     let result = await fetch("fruits.json");
     let data = await result.json();
-   return data;
+    let fruits= data.items;
+    products= product.map(item =>{
+      const  {title,price}= item.field;
+      const  {id} =item.sys; 
+      const image =item.fields.image.file.url;
+      return{title,price,id,image}
+    })
+
+   return fruits;
 } catch (error) {
   console.log(Error) ; 
 }

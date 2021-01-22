@@ -1,0 +1,23 @@
+{
+    "items": [
+        {
+
+            "sys": {"id": "1"},
+            "fields": {
+                "title": "Mixed fruits bag",
+                "price": 10,
+                "image" : { "fields": { "file":{"url":"./images/MixedFruits.png"}}}
+                
+            }
+
+                    },
+                    {
+                        "sys": {"id": "2"},
+                        "fields": {
+                            "title": "apple",
+                            "price": 10,
+                            "image": { "fields": { "file":{"url":"./images/Apple.png"}}}
+                        }
+                    }
+    ]
+}
